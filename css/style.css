@@ -1,0 +1,167 @@
+:root {
+    --inner: rgb(61, 61, 61);
+    --border: gray;
+    --accent: black;
+}
+
+* {
+    font-family: monospace, monospace;
+}
+.vendingMachine {
+    margin: auto;
+    padding-inline: 1em;
+    text-align: center;
+    margin-top: 30px;
+
+    width: 300px;
+    height: 585px;
+    background-color: gray;
+    background: var(--inner);
+    box-shadow: 0 -6px 0 -2px var(--inner), 0 6px 0 -2px var(--inner),
+        0 -12px 0 -4px var(--inner), 0 12px 0 -4px var(--inner),
+        0 -18px 0 -8px var(--inner), 0 18px 0 -8px var(--inner),
+        0 -24px 0 -12px var(--inner), 0 24px 0 -12px var(--inner),
+        -2px 0 0 0 var(--border), 2px 0 0 0 var(--border),
+        0 -4px 0 0 var(--border), 0 4px 0 0 var(--border),
+        0 -10px 0 -2px var(--border), 0 10px 0 -2px var(--border),
+        0 -14px 0 -4px var(--border), 0 14px 0 -4px var(--border),
+        0 -20px 0 -8px var(--border), 0 20px 0 -8px var(--border),
+        0 -26px 0 -12px var(--border), 0 26px 0 -12px var(--border),
+        -4px 0 0 0 var(--accent), 4px 0 0 0 var(--accent),
+        0 -2px 0 2px var(--accent), 0 2px 0 2px var(--accent),
+        0 -8px 0 0px var(--accent), 0 8px 0 0px var(--accent),
+        0 -12px 0 -2px var(--accent), 0 12px 0 -2px var(--accent),
+        0 -16px 0 -4px var(--accent), 0 16px 0 -4px var(--accent),
+        0 -22px 0 -8px var(--accent), 0 22px 0 -8px var(--accent),
+        0 -28px 0 -12px var(--accent), 0 28px 0 -12px var(--accent),
+        -6px 0 0 0 var(--border), 6px 0 0 0 var(--border),
+        0 0 0 4px var(--border), 0 -6px 0 2px var(--border),
+        0 6px 0 2px var(--border), 0 -10px 0 0 var(--border),
+        0 10px 0 0 var(--border), 0 -14px 0 -2px var(--border),
+        0 14px 0 -2px var(--border), 0 -18px 0 -4px var(--border),
+        0 18px 0 -4px var(--border), 0 -24px 0 -8px var(--border),
+        0 24px 0 -8px var(--border), 0 -30px 0 -12px var(--border),
+        0 30px 0 -12px var(--border);
+}
+
+.vendingMachine .header {
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vendingMachine .title {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+
+.vendingMachine .subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.vendingMachine .footer {
+    margin: 25px 5px 5px 5px;
+}
+
+.vendingMachine .footer .pickupBox {
+    background-color: #535353;
+    padding: 5px;
+    color: white;
+    border-radius: 6.5px;
+}
+
+.content {
+    --inner: rgba(85, 85, 85, 1);
+    --other-inner: black;
+
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: var(--other-inner);
+    box-shadow: 0 -6px 0 -2px var(--other-inner),
+        0 6px 0 -2px var(--other-inner), 0 -12px 0 -4px var(--other-inner),
+        0 12px 0 -4px var(--other-inner), 0 -18px 0 -8px var(--other-inner),
+        0 18px 0 -8px var(--other-inner), 0 -24px 0 -12px var(--other-inner),
+        0 24px 0 -12px var(--other-inner), -2px 0 0 0 var(--border),
+        2px 0 0 0 var(--border), 0 -4px 0 0 var(--border),
+        0 4px 0 0 var(--border), 0 -10px 0 -2px var(--border),
+        0 10px 0 -2px var(--border), 0 -14px 0 -4px var(--border),
+        0 14px 0 -4px var(--border), 0 -20px 0 -8px var(--border),
+        0 20px 0 -8px var(--border), 0 -26px 0 -12px var(--border),
+        0 26px 0 -12px var(--border), -4px 0 0 0 var(--accent),
+        4px 0 0 0 var(--accent), 0 -2px 0 2px var(--accent),
+        0 2px 0 2px var(--accent), 0 -8px 0 0px var(--accent),
+        0 8px 0 0px var(--accent), 0 -12px 0 -2px var(--accent),
+        0 12px 0 -2px var(--accent), 0 -16px 0 -4px var(--accent),
+        0 16px 0 -4px var(--accent), 0 -22px 0 -8px var(--accent),
+        0 22px 0 -8px var(--accent), 0 -28px 0 -12px var(--accent),
+        0 28px 0 -12px var(--accent), -6px 0 0 0 var(--border),
+        6px 0 0 0 var(--border), 0 0 0 4px var(--border),
+        0 -6px 0 2px var(--border), 0 6px 0 2px var(--border),
+        0 -10px 0 0 var(--border), 0 10px 0 0 var(--border),
+        0 -14px 0 -2px var(--border), 0 14px 0 -2px var(--border),
+        0 -18px 0 -4px var(--border), 0 18px 0 -4px var(--border),
+        0 -24px 0 -8px var(--border), 0 24px 0 -8px var(--border),
+        0 -30px 0 -12px var(--border), 0 30px 0 -12px var(--border);
+}
+
+.translucent-content {
+    width: 280px;
+    height: 350px;
+
+    --inner: rgba(255, 255, 255, 1);
+    --other-inner: rgba(255, 255, 255, 0.75);
+    opacity: 0.5;
+    filter: blur(5px);
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+    cursor: pointer;
+    margin-left: 10px;
+
+    background: var(--other-inner);
+    box-shadow: 0 -6px 0 -2px var(--other-inner),
+        0 6px 0 -2px var(--other-inner), 0 -12px 0 -4px var(--other-inner),
+        0 12px 0 -4px var(--other-inner), 0 -18px 0 -8px var(--other-inner),
+        0 18px 0 -8px var(--other-inner), 0 -24px 0 -12px var(--other-inner),
+        0 24px 0 -12px var(--other-inner), -2px 0 0 0 var(--border),
+        2px 0 0 0 var(--border), 0 -4px 0 0 var(--border),
+        0 4px 0 0 var(--border), 0 -10px 0 -2px var(--border),
+        0 10px 0 -2px var(--border), 0 -14px 0 -4px var(--border),
+        0 14px 0 -4px var(--border), 0 -20px 0 -8px var(--border),
+        0 20px 0 -8px var(--border), 0 -26px 0 -12px var(--border),
+        0 26px 0 -12px var(--border), -4px 0 0 0 var(--accent),
+        4px 0 0 0 var(--accent), 0 -2px 0 2px var(--accent),
+        0 2px 0 2px var(--accent), 0 -8px 0 0px var(--accent),
+        0 8px 0 0px var(--accent), 0 -12px 0 -2px var(--accent),
+        0 12px 0 -2px var(--accent), 0 -16px 0 -4px var(--accent),
+        0 16px 0 -4px var(--accent), 0 -22px 0 -8px var(--accent),
+        0 22px 0 -8px var(--accent), 0 -28px 0 -12px var(--accent),
+        0 28px 0 -12px var(--accent), -6px 0 0 0 var(--border),
+        6px 0 0 0 var(--border), 0 0 0 4px var(--border),
+        0 -6px 0 2px var(--border), 0 6px 0 2px var(--border),
+        0 -10px 0 0 var(--border), 0 10px 0 0 var(--border),
+        0 -14px 0 -2px var(--border), 0 14px 0 -2px var(--border),
+        0 -18px 0 -4px var(--border), 0 18px 0 -4px var(--border),
+        0 -24px 0 -8px var(--border), 0 24px 0 -8px var(--border),
+        0 -30px 0 -12px var(--border), 0 30px 0 -12px var(--border);
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    background-color: transparent;
+    border: none;
+}
